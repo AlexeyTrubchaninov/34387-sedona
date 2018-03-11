@@ -8,8 +8,8 @@
 
   <header class="main-header">
     <nav class="main-header-nav">
-      <a class="main-header-logo" herf="#">
-        <img src="#" alt="Логотип Sedona">
+      <a class="main-header-logo" href="#">
+        <img src="img/logo.png" width="137" height="70" alt="Логотип Sedona">
       </a>
         <ol class="main-header-nav-list">
           <li><a href="#">Информация</a></li>
@@ -21,9 +21,39 @@
     </header>
     <main>
       <section class="filters">
-        <span class="form"></span> <!--Форма поиска гостиницы-->
-      </section>
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="filters-form-background-pic">
+              <img src="img/Photo-blur-inner.png" width="768" height="418" alt="Изображение Гранд-Каньона со стороны Седоны">
+            </div>
+            <div class="infrastructure">
+              <fieldset class="infrastructure-fieldset">
+                <legend class="infrastructure-title">ИНФРАСТРУКТУРА:</legend>
+                  <input type="checkbox" id="infrastructure-checkbox-1" value="БАССЕЙН" checked>
+                  <input type="checkbox" id="infrastructure-checkbox-2" value="ПАРКОВКА">
+                  <input type="checkbox" id="infrastructure-checkbox-3" value="WI-FI">
+                </fieldset>
+                <fieldset class="accomodation-fieldset">
+                  <legend class="accomodation-fieldset-title">ТИП ЖИЛЬЯ:</legend>
+                    <input type="checkbox" id="accomodation-checkbox-1" value="ГОСТИНИЦА" checked>
+                    <input type="checkbox" id="accomodation-checkbox-2" value="ОТЕЛЬ" checked>
+                    <input type="checkbox" id="accomodation-checkbox-3" value="АППАРТАМЕНТЫ" checked>
+                </fieldset>
+                  <!-- Для создания блока Стоимость необходим js. Пока сделал заготовку, как я её понял -->
+                <fieldset class="pricing-fieldset">
+                   <legend class="pricing-fieldset-title">СТОИМОСТЬ В СУТКИ (P)</legend>
+                   <input type="range" min="0" max="4000">
+                   <output></output>
+                   <output></output>
+                </fieldset>
+              <div class="filters-form-button">
+                <input type="submit" value="ПОКАЗАТЬ">
+              </div>
+            </div>
+          </form>
+       </section>
       <section class="search-results">
+        <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
         <div class="search-results-header">
           <b>НАЙДЕНО:3</b>
           <p class="search-results-sorting">СОРТИРОВКА:</p>
@@ -41,7 +71,7 @@
         <ul class="search-results-accomodation">
           <li>
             <div class="search-results-accomodation-img">
-              <img src="#" alt="AMARA RESORT & SPA">
+              <img src="img/amara.png" width="135" height="90" alt="AMARA RESORT & SPA">
             </div>
             <div class="search-results-accomodation-text">
               <h3>AMARA RESORT & SPA </h3>
@@ -57,7 +87,7 @@
           </li>
           <li>
             <div class="search-results-accomodation-img">
-              <img src="#" alt="DESERT QUAIL INN">
+              <img src="img/Desertinn.png" width="135" height="90" alt="DESERT QUAIL INN">
             </div>
             <div class="search-results-accomodation-text">
               <h3>DESERT QUAIL INN</h3>
@@ -72,7 +102,7 @@
           </li>
           <li>
             <div class="search-results-accomodation-img">
-              <img src="#" alt="VILLAS AT POCO DIABLO">
+              <img src="img/Villas.png" width="135" height="90" alt="VILLAS AT POCO DIABLO">
             </div>
             <div class="search-results-accomodation-text">
               <h3>DESERT QUAIL INN</h3>
@@ -93,15 +123,17 @@
       <b class="footer-hashtag">#VISITSEDONA</b>
       <ul class="footer-social">
         <li class="footer-social-twitter">
-          <a href="#" alt="twitter" class="twitter-button">twitter</a>
+          <a href="#" title="twitter" class="twitter-button">twitter</a>
         </li>
-        <li class="footer-social-facebook>"
-          <a href="#" alt="facebook" class="facebook-button">facebook</a>
+        <li class="footer-social-facebook">
+          <a href="#" title="facebook" class="facebook-button">facebook</a>
         </li>
         <li class="footer-social-youtube">
-          <a href="#" alt="youtube" class="youtube-button">youtube</a>
+          <a href="#" title="youtube" class="youtube-button">youtube</a>
         </li>
       </ul>
-      <a href="#" alt="htmlacademy" class="htmlacademy-button"><img src="#"></a>
+      <!-- Изображение логотипа htmlacademy предоставили в виде svg. svg формат, как я понял будет вставляться позже -->
+      <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="#" alt="htmlacademy-logo"></a>
+    </footer>
       </body>
     </html>

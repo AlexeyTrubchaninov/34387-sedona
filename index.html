@@ -8,63 +8,65 @@
 
   <header class="main-header">
     <nav class="main-header-nav">
-      <a class="main-header-logo" herf="#">
-        <img src="#" alt="Логотип Sedona">
+      <a class="main-header-logo" href="#">
+        <img src="img/logo.png" width="137" height="70" alt="Логотип Sedona">
       </a>
         <ul class="main-header-nav-list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта Штата</a></li>
           <li><a href="#">Гостиницы</a></li>
-        </ol>
+        </ul>
       </nav>
     </header>
-
-    <main>
-    <h1 class="visually-hidden">Пять причин посетить Седону</h1>
+<main>
+  <h1 class="visually-hidden">Пять причин посетить Седону</h1>
     <section class="header-background">
-      <h2 class="visually-hidden">Заголовок</h2>
+      <h2 class="visually-hidden">Изображение Каньона</h2>
       <div class="image-header">
-        <div class="image-header-titles"></div>
+        <div class="image-header-titles">
+          <img src="img/intro.png" width="768" height="513" alt="Изображение Каньона со стороны Седоны">
+        </div>
       </div>
-
-
     </section>
 
-    <section class="reasoning">
+  <section class="reasoning">
+    <h2 class="visually-hidden"> Перечисление преимуществ Седоны</h2>
       <div class="reasoning-title">
-      <p class="small-city"><b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
+        <p class="reasoning-title-1"><b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
         ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b></p>
-      <p class="5-reasons">РАССМОТРИМ 5 ПРИЧИН,ПО КОТОРЫМ СЕДОНА КРУЧЕ,ЧЕМ ГРАНД КАНЬОН!</p>
-    </div>
+        <p class="reasoning-title-2">РАССМОТРИМ 5 ПРИЧИН,ПО КОТОРЫМ СЕДОНА КРУЧЕ,ЧЕМ ГРАНД КАНЬОН!</p>
+      </div>
 
-    <div class="reason-1-general">
+  <div class="reason-1">
     <div class="reason-1-text">
       <h3 class="reason-text-title">Настоящий городок</h3>
-      <p class="reason-text-body">-№1-<br>СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+        <p class="reason-text-body">-№1-<br>СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
     </div>
     <div class="reason-1-picture">
+      <img src="img/pic1.png" width="512" height="256" alt="Изображение города">
     </div>
   </div>
     <div class="reason-1-list">
       <ul class="reason-1-benefits">
         <li class="reason-1-benefits-accomodation">
           <h3>ЖИЛЬЁ</h3>
-          <p> РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В НАСТОЯЩЕМ КИНО!</P>
+          <p class="accomodation-slogan"> РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В НАСТОЯЩЕМ КИНО!</P>
         </li>
         <li class="reason-1-benefits-food">
           <h3>ЕДА</h3>
-          <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+          <p class='food-slogan'>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
         </li>
         <li class="reason-1-benefits-souvenirs">
           <h3>СУВЕНИРЫ</h3>
-          <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА</p>
+          <p class="souvenirs-slogan">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА</p>
         </li>
       </ul>
     </div>
     <div class="other-reasons">
       <div class="reason-2">
         <div class="reason-2-picture">
+          <img src="img/pic2.png" width="512" height="256" alt="Изображение достопримечательности мост дьявола">
         </div>
         <div class="reasons-2-text">
           <h3 class="reason-text-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
@@ -89,6 +91,8 @@
     </div>
   </div>
 </section>
+<section class="booking">
+  <h2 class="visually-hidden">Модуль бронирования гостиницы</h2>
   <div class="interested">
     <div class="interested-text">
       <h2 class="interested-text-question">Заинтересовались?</h2>
@@ -96,22 +100,49 @@
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДДЛОЖЕНИЯ В СЕДОНЕ</p>
     </div>
     <div class="interested-form"></div>
-    <div class="interested-map"></div>
+     <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      <form class="booking-from" action="https://echo.htmlacademy.ru" method="post">
+        <div class="check-in">
+         <label for="check-in-date">ДАТА ЗАЕЗДА:</label>
+         <input type="date" id="check-in-date" name="check-in-date" value="2017-04-24" required>
+        </div>
+        <div class="check-out">
+          <label for="check-out-date">ДАТА ВЫЕЗДА:</label>
+          <input type="date" id="check-out-date" name="check-out-date" value="2017-07-04" required>
+        </div>
+        <div class="adults">
+          <label for="adults-form">ВЗРОСЛЫЕ:</label>
+          <input type="number" id="adults-form" name="adults-form" min="0" value="2" required>
+        </div>
+        <div class="children">
+          <label for="children-form">ДЕТИ:</label>
+          <input type="number" id="children-form" name="children-form" min="0" value="0" required>
+        </div>
+        <div class="hotel-search">
+          <input type="submit" value="НАЙТИ" name="hotel-search-button">
+        </div>
+      </form>
+    <div class="interested-map">
+      <img src="img/map.png" width="768" height="593" alt="Карта проезда до Седоны">
+    </div>
   </div>
+</section>
 </main>
 <footer class="main-footer">
   <b class="footer-hashtag">#VISITSEDONA</b>
   <ul class="footer-social">
     <li class="footer-social-twitter">
-      <a href="#" alt="twitter" class="twitter-button">twitter</a>
+      <a href="#" title="twitter" class="twitter-button">twitter</a>
     </li>
     <li class="footer-social-facebook">
-      <a href="#" alt="facebook" class="facebook-button">facebook</a>
+      <a href="#" title="facebook" class="facebook-button">facebook</a>
     </li>
     <li class="footer-social-youtube">
-      <a href="#" alt="youtube" class="youtube-button">youtube</a>
+      <a href="#" title="youtube" class="youtube-button">youtube</a>
     </li>
   </ul>
-  <a href="#" alt="htmlacademy" class="htmlacademy-button"><img src="#"></a>
+  <!-- Изображение логотипа htmlacademy предоставили в виде svg. svg формат, как я понял будет вставляться позже -->
+  <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="#" alt="htmlacademy-logo"></a>
+</footer>
   </body>
 </html>
