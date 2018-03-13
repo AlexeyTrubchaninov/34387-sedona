@@ -8,44 +8,47 @@
 
   <header class="main-header">
     <nav class="main-header-nav">
-      <a class="main-header-logo" href="#">
-        <img src="img/logo.png" width="137" height="70" alt="Логотип Sedona">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/Logo.png" width="137" height="70" alt="Логотип Sedona">
       </a>
-        <ol class="main-header-nav-list">
+        <ul class="main-header-nav-list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта Штата</a></li>
           <li><a href="#">Гостиницы</a></li>
-        </ol>
+        </ul>
       </nav>
     </header>
     <main>
       <section class="filters">
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="filters-form-background-pic">
-              <img src="img/Photo-blur-inner.png" width="768" height="418" alt="Изображение Гранд-Каньона со стороны Седоны">
-            </div>
             <div class="infrastructure">
+              <!-- Место под фон blur-sedona -->
               <fieldset class="infrastructure-fieldset">
                 <legend class="infrastructure-title">ИНФРАСТРУКТУРА:</legend>
-                  <input type="checkbox" id="infrastructure-checkbox-1" value="БАССЕЙН" checked>
-                  <input type="checkbox" id="infrastructure-checkbox-2" value="ПАРКОВКА">
-                  <input type="checkbox" id="infrastructure-checkbox-3" value="WI-FI">
+                  <lable for="infrastructure-checkbox-1">БАССЕЙН</lable>
+                  <input type="checkbox" id="infrastructure-checkbox-1" checked>
+                  <lable for="infrastructure-checkbox-2">ПАРКОВКА</lable>
+                  <input type="checkbox" id="infrastructure-checkbox-2">
+                  <lable for="infrastructure-checkbox-3">WI-FI</lable>
+                  <input type="checkbox" id="infrastructure-checkbox-3">
                 </fieldset>
                 <fieldset class="accomodation-fieldset">
                   <legend class="accomodation-fieldset-title">ТИП ЖИЛЬЯ:</legend>
-                    <input type="checkbox" id="accomodation-checkbox-1" value="ГОСТИНИЦА" checked>
-                    <input type="checkbox" id="accomodation-checkbox-2" value="ОТЕЛЬ" checked>
-                    <input type="checkbox" id="accomodation-checkbox-3" value="АППАРТАМЕНТЫ" checked>
+                    <lable for="accomodation-checkbox-1">ГОСТИНИЦА</lable>
+                    <input type="checkbox" id="accomodation-checkbox-1" checked>
+                    <lable for="accomodation-checkbox-2">ОТЕЛЬ</lable>
+                    <input type="checkbox" id="accomodation-checkbox-2" checked>
+                    <lable for="accomodation-checkbox-3">АПАРТАМЕНТЫ</lable>
+                    <input type="checkbox" id="accomodation-checkbox-3" checked>
                 </fieldset>
-                  <!-- Для создания блока Стоимость необходим js. Пока сделал заготовку, как я её понял -->
-                <fieldset class="pricing-fieldset">
-                   <legend class="pricing-fieldset-title">СТОИМОСТЬ В СУТКИ (P)</legend>
-                   <input type="range" min="0" max="4000">
-                   <output></output>
-                   <output></output>
-                </fieldset>
+                <!-- Место под range -->
+                <div class="shape-scale">
+                  <div class="shape-bar"></div>
+                </div>
+                <div class="shape-toggle shape-toggle__min"></div>
+                <div class="shape-toggle shape-toggle__max"></div>
               <div class="filters-form-button">
                 <input type="submit" value="ПОКАЗАТЬ">
               </div>
@@ -71,7 +74,7 @@
         <ul class="search-results-accomodation">
           <li>
             <div class="search-results-accomodation-img">
-              <img src="img/amara.png" width="135" height="90" alt="AMARA RESORT & SPA">
+              <img src="img/Amara.png" width="135" height="90" alt="AMARA RESORT & SPA">
             </div>
             <div class="search-results-accomodation-text">
               <h3>AMARA RESORT & SPA </h3>
@@ -132,8 +135,7 @@
           <a href="#" title="youtube" class="youtube-button">youtube</a>
         </li>
       </ul>
-      <!-- Изображение логотипа htmlacademy предоставили в виде svg. svg формат, как я понял будет вставляться позже -->
-      <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="#" alt="htmlacademy-logo"></a>
+      <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/svg/logo-htmlacademy.svg" alt="htmlacademy-logo"></a>
     </footer>
       </body>
     </html>

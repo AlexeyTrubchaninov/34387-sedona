@@ -9,13 +9,13 @@
   <header class="main-header">
     <nav class="main-header-nav">
       <a class="main-header-logo" href="#">
-        <img src="img/logo.png" width="137" height="70" alt="Логотип Sedona">
+        <img src="img/Logo.png" width="137" height="70" alt="Логотип Sedona">
       </a>
         <ul class="main-header-nav-list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта Штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -25,7 +25,7 @@
       <h2 class="visually-hidden">Изображение Каньона</h2>
       <div class="image-header">
         <div class="image-header-titles">
-          <img src="img/intro.png" width="768" height="513" alt="Изображение Каньона со стороны Седоны">
+          <img src="img/Sedona-title.png" width="768" height="513" alt="Изображение Каньона со стороны Седоны">
         </div>
       </div>
     </section>
@@ -39,13 +39,8 @@
       </div>
 
   <div class="reason-1">
-    <div class="reason-1-text">
-      <h3 class="reason-text-title">Настоящий городок</h3>
-        <p class="reason-text-body">-№1-<br>СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
-    </div>
-    <div class="reason-1-picture">
-      <img src="img/pic1.png" width="512" height="256" alt="Изображение города">
-    </div>
+      <h3 class="reason-1-title">Настоящий городок</h3>
+        <p class="reason-1-body">-№1-<br>СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
   </div>
     <div class="reason-1-list">
       <ul class="reason-1-benefits">
@@ -65,13 +60,8 @@
     </div>
     <div class="other-reasons">
       <div class="reason-2">
-        <div class="reason-2-picture">
-          <img src="img/pic2.png" width="512" height="256" alt="Изображение достопримечательности мост дьявола">
-        </div>
-        <div class="reasons-2-text">
-          <h3 class="reason-text-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-          <p class="reason-text-body">-№2-<br>ДА,ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
-        </div>
+        <h3 class="reason-2-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+          <p class="reason-2-body">-№2-<br>ДА,ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
       </div>
       <div class="reasons-extra">
         <ul class="reasons-extra-list">
@@ -104,19 +94,19 @@
       <form class="booking-from" action="https://echo.htmlacademy.ru" method="post">
         <div class="check-in">
          <label for="check-in-date">ДАТА ЗАЕЗДА:</label>
-         <input type="date" id="check-in-date" name="check-in-date" value="2017-04-24" required>
+         <input type="text" id="check-in-date" name="check-in-date" value="24 АПРЕЛЯ 2017" required>
         </div>
         <div class="check-out">
           <label for="check-out-date">ДАТА ВЫЕЗДА:</label>
-          <input type="date" id="check-out-date" name="check-out-date" value="2017-07-04" required>
+          <input type="text" id="check-out-date" name="check-out-date" value="4 ИЮЛЯ 2017" required>
         </div>
         <div class="adults">
           <label for="adults-form">ВЗРОСЛЫЕ:</label>
-          <input type="number" id="adults-form" name="adults-form" min="0" value="2" required>
+          <input type="text" id="adults-form" name="adults-form" value="2" required>
         </div>
         <div class="children">
           <label for="children-form">ДЕТИ:</label>
-          <input type="number" id="children-form" name="children-form" min="0" value="0" required>
+          <input type="text" id="children-form" name="children-form" value="0" required>
         </div>
         <div class="hotel-search">
           <input type="submit" value="НАЙТИ" name="hotel-search-button">
@@ -141,8 +131,7 @@
       <a href="#" title="youtube" class="youtube-button">youtube</a>
     </li>
   </ul>
-  <!-- Изображение логотипа htmlacademy предоставили в виде svg. svg формат, как я понял будет вставляться позже -->
-  <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="#" alt="htmlacademy-logo"></a>
+  <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/svg/logo-htmlacademy.svg" alt="htmlacademy-logo"></a>
 </footer>
   </body>
 </html>
