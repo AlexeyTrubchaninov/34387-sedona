@@ -5,15 +5,16 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
+<div class="wrapper">
   <header class="main-header">
-    <nav class="main-header-nav">
-      <a class="main-header-logo" href="#">
+    <nav class="nav">
+      <a class="header-logo" href="#">
         <img src="img/Logo.png" width="137" height="70" alt="Логотип Sedona">
       </a>
-        <ul class="main-header-nav-list">
+        <ul class="nav-list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта Штата</a></li>
@@ -21,37 +22,41 @@
         </ul>
       </nav>
     </header>
+
 <main>
+
   <h1 class="visually-hidden">Пять причин посетить Седону</h1>
     <section class="header-background">
       <h2 class="visually-hidden">Изображение Каньона</h2>
-      <div class="image-header">
-        <div class="image-header-titles">
-          <img src="img/Sedona-title.png" width="768" height="513" alt="Изображение Каньона со стороны Седоны">
-        </div>
+      <div class="header-img">
+        <img src="img/Sedona-title.png" width="455" height="345" alt="Изображение Каньона со стороны Седоны">
       </div>
     </section>
 
-  <section class="reasoning">
+  <section class="attractions">
     <h2 class="visually-hidden"> Перечисление преимуществ Седоны</h2>
-      <div class="reasoning-title">
-        <p class="reasoning-title-1"><b>Седона- небольшой городок в Аризоне, заслуживающий большего!</b></p>
-        <p class="reasoning-title-2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон:</p>
+      <div class="mountains">
+        <b class="mountains-slogan">Седона- небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p class="mountains-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон:</p>
       </div>
 
   <div class="reason-1">
-      <h3 class="reason-1-title">Настоящий городок</h3>
-        <p class="reason-1-body">-№1-<br>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="reason-1-text">
+        <h3>Настоящий городок</h3>
+        <p>-№1-<br>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class="reason-1-picture"></div>
   </div>
+
     <div class="reason-1-list">
       <ul class="reason-1-benefits">
         <li class="reason-1-benefits-accomodation">
           <h3>ЖИЛЬЁ</h3>
-          <p class="accomodation-slogan"> Реомендуем пожить в настоящем мотеле, все как в настоящем кино!</P>
+          <p class="accomodation-slogan"> Рекомендуем пожить в настоящем мотеле, все как в настоящем кино!</P>
         </li>
         <li class="reason-1-benefits-food">
           <h3>ЕДА</h3>
-          <p class='food-slogan'>Всегда заказывайте настоящий бургер, вы не разочаруетесь!</p>
+          <p class="food-slogan">Всегда заказывайте настоящий бургер, вы не разочаруетесь!</p>
         </li>
         <li class="reason-1-benefits-souvenirs">
           <h3>СУВЕНИРЫ</h3>
@@ -59,10 +64,14 @@
         </li>
       </ul>
     </div>
+
     <div class="other-reasons">
       <div class="reason-2">
-        <h3 class="reason-2-title">Там есть мост дьявола</h3>
-          <p class="reason-2-body">-№2-<br>Да, по нему можно пройтись, если конечно осмелитесь!</p>
+        <div class="reason-2-text">
+        <h3>Там есть мост дьявола</h3>
+          <p>-№2-<br>Да, по нему можно пройтись, если конечно осмелитесь!</p>
+        </div>
+        <div class="reason-2-picture"></div>
       </div>
       <div class="reasons-extra">
         <ul class="reasons-extra-list">
@@ -81,7 +90,9 @@
       </ul>
     </div>
   </div>
+
 </section>
+
 <section class="booking">
   <h2 class="visually-hidden">Модуль бронирования гостиницы</h2>
   <div class="interested">
@@ -90,33 +101,61 @@
       <p class="interested-text-offer">Укажите предполагаемые даты поездки
         и мы покажем вам лучшие предложения в Седоне</p>
     </div>
-    <div class="interested-form"></div>
-     <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-      <form class="booking-from" action="https://echo.htmlacademy.ru" method="post">
-        <div class="check-in">
-         <label for="check-in-date">ДАТА ЗАЕЗДА:</label>
-         <input type="text" id="check-in-date" name="check-in-date" value="24 АПРЕЛЯ 2017" required>
-        </div>
-        <div class="check-out">
-          <label for="check-out-date">ДАТА ВЫЕЗДА:</label>
-          <input type="text" id="check-out-date" name="check-out-date" value="4 ИЮЛЯ 2017" required>
-        </div>
-        <div class="adults">
-          <label for="adults-form">ВЗРОСЛЫЕ:</label>
-          <input type="text" id="adults-form" name="adults-form" value="2" required>
-        </div>
-        <div class="children">
-          <label for="children-form">ДЕТИ:</label>
-          <input type="text" id="children-form" name="children-form" value="0" required>
-        </div>
-        <div class="hotel-search">
-          <input type="submit" value="НАЙТИ" name="hotel-search-button">
-        </div>
-      </form>
-    <div class="interested-map">
-      <img src="img/map.png" width="768" height="593" alt="Карта проезда до Седоны">
-    </div>
-  </div>
+
+      <a class="search-hotel-button" href="#">Поиск гостиницы в седоне</a>
+      <section class="order-form">
+       <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+         <div class="check-in">
+           <label for="check-in-date">
+             <span class="come">
+               Дата заезда:
+               <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017">
+               <span class="visually-hidden">Календарь</span>
+             </span>
+           </label>
+         </div>
+
+         <div class="check-out">
+           <label for="check-out-date">
+             <span class="leave">
+               Дата выезда:
+               <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017">
+               <span class="visually-hidden">Календарь</span>
+             </span>
+           </label>
+         </div>
+
+         <div class="adults">
+           <div class="adults-wrapper">
+             <label for="adults">Взрослые:</label>
+             <span class="visually-hidden">Минус</span>
+             <button class="decrease-button button-number" type="button">-</button>
+             <input id="adults" type="text" name="adults" placeholder="2">
+             <span class="visually-hidden">Плюс</span>
+             <button class="increase-button button-number" type="button">+</button>
+           </div>
+         </div>
+
+         <div class="children">
+           <div class="children-wrapper">
+             <label for="children">Дети:</label>
+             <span class="visually-hidden">минус</span>
+             <button class="minus-button button-number" type="button">-</button>
+             <input id="children" type="text" name="children" placeholder="0">
+             <span class="visually-hidden">плюс</span>
+             <button class="plus-button button-number" type="button">+</button>
+           </div>
+         </div>
+
+         <button class="button-search" type="submit">Найти</button>
+       </form>
+     </section>
+     <section class="map">
+       <h2 class="visually-hidden">Расположение Седоны на карте</h2>
+       <div class="image-of-map">
+         <span class="visually-hidden">Карта курорта Седона</span>
+       </div>
+     </section>
 </section>
 </main>
 <footer class="main-footer">
@@ -134,5 +173,6 @@
   </ul>
   <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/logo-htmlacademy.svg" width="155" height="41" alt="htmlacademy-logo"></a>
 </footer>
+</div>
   </body>
 </html>
