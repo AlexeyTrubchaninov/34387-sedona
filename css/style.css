@@ -129,7 +129,9 @@ img{
   text-align: center;
   width:1200px;
   height:145px;
-  padding-top: 65px;
+  padding-top: 35px;
+  padding-left: 350px;
+  padding-right: 350px;
 }
 
 .mountains-slogan{
@@ -160,6 +162,12 @@ img{
 .reason-1-text{
   width:400px;
   padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.reason-1-text>p nth-child(1){
+  padding-bottom:20px;
 }
 
 .reason-1-picture{
@@ -173,6 +181,7 @@ img{
 .reason-1-list{
   height:330px;
   text-align: center;
+  padding-top: 150px;
 }
 
 .reason-1-benefits{
@@ -185,6 +194,10 @@ img{
 .reason-2-text{
   width:400px;
   padding-top: 40px;
+}
+
+.reason-2-text>p nth-child(1){
+  padding-bottom:20px;
 }
 
 .reason-2-picture{
@@ -202,6 +215,7 @@ img{
 .reasons-extra{
   min-height:258px;
   background-color:#eeeeee;
+  padding-top: 80px;
 
 }
 
@@ -229,6 +243,12 @@ img{
   font-weight:bold;
 }
 
+.search-form{
+  display:flex;
+  flex-wrap: wrap;
+  padding:55px;
+}
+
 .search-hotel-button {
   margin: 0 auto;
   font-weight: bold;
@@ -240,7 +260,7 @@ img{
   width:567px;
   min-height:85px;
   text-align: center;
-
+  padding-top: 30px;
 }
 
 .search-hotel-button:hover {
@@ -253,7 +273,9 @@ img{
 }
 
 .order-form {
+  position:absolute;
   margin: 0 auto;
+  margin-left: 317px;
   font-weight: bold;
   background: #ffffff;
   width: 568px;
@@ -350,6 +372,9 @@ img{
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  width:100%;
+  margin-top: 40px;
+  padding:15px;
 }
 
 .button-search:hover {
@@ -364,8 +389,6 @@ img{
 .map {
   width: 1200px;
   min-height: 593px;
-  background: #ffdeac url("../img/map.png") no-repeat;
-  text-align: center;
 }
 
 .main-footer{
@@ -523,6 +546,7 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   width: 230px;
+  padding-left: 25px;
 }
 
 .results b {
