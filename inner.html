@@ -30,19 +30,19 @@
        <fieldset class="infrastructure">
          <legend>Инфраструктура:</legend>
          <ul>
-           <li class="filter-option">
+           <li class="filter-option option-pool">
              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-swimming-pool" type="checkbox" name="the-filter-of-option" value="swimming-pool" checked>
              <label for="filter-swimming-pool" tabindex="1">
                <span class="filter-form-text">Бассейн</span>
              </label>
            </li>
-           <li class="filter-option">
+           <li class="filter-option option-parking">
              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="the-filter-of-option" value="parking">
              <label for="filter-parking" tabindex="2">
                <span class="filter-form-text">Парковка</span>
              </label>
            </li>
-           <li class="filter-option">
+           <li class="filter-option option-internet">
              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-wi-fi" type="checkbox" name="the-filter-of-option" value="wi-fi">
              <label for="filter-wi-fi" tabindex="3">
                <span class="filter-form-text">Wi-Fi</span>
@@ -53,47 +53,41 @@
        <fieldset class="appartaments-type">
          <legend>Тип жилья:</legend>
          <ul>
-           <li class="filter-option">
+           <li class="filter-option option-hotel">
              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" name="the-filter-of-option" value="hotel" checked>
              <label for="filter-hotel" tabindex="4">
                <span class="filter-form-text">Гостиница</span>
              </label>
            </li>
-           <li class="filter-option">
+           <li class="filter-option option-motel">
              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-motel" type="checkbox" name="the-filter-of-option" value="motel" checked>
              <label for="filter-motel" tabindex="5">
                <span class="filter-form-text">Мотель</span>
              </label>
            </li>
-           <li class="filter-option">
+           <li class="filter-option option-appartments">
              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-apartments" type="checkbox" name="the-filter-of-option" value="apartments" checked>
              <label for="filter-apartments" tabindex="6">
-               <span class="filter-form-text">Аппартаменты</span>
+               <span class="filter-form-text">Апартаменты</span>
              </label>
            </li>
          </ul>
        </fieldset>
-       <fieldset class="value">
-         <legend class="title">Стоимость в сутки (р):</legend>
+       <div class="filter-range">
+         <div class="filter-range-title">Стоимость в сутки (р):</div>
          <div class="price-controls">
-           <label class="min-price">
-             от
-             <input type="text" name="min-price" value="0" tabindex="7">
-           </label>
-           <label class="max-price">
-             до
-             <input type="text" name="max-price" value="3000" tabindex="8">
-           </label>
+           <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+           <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
          </div>
          <div class="range-controls">
-           <div class="range">
+           <div class="scale">
              <div class="bar"></div>
            </div>
-           <div class="range-toggle range-min"></div>
-           <div class="range-toggle range-max"></div>
+           <div class="range-toggle range-toggle-min"></div>
+           <div class="range-toggle range-toggle-max"></div>
          </div>
-         <button class="transparent-button" type="submit">Показать</button>
-       </fieldset>
+         <button class="btn-transparent" type="submit">Показать</button>
+       </div>
      </form>
    </section>
    <section class="catalog">
@@ -104,7 +98,7 @@
       </div>
       <ul class="sort">
         <li class="sort-item">
-          <p>Сортировка</p>
+          <p>Сортировка:</p>
         </li>
         <li class="sort-item">
           <a class="sort-item-current">По цене</a>
@@ -138,7 +132,7 @@
         </div>
         <div class="hotel-description">
           <h3 class="the-name-of-the-hotel">
-            <a href="#">Amara Resort Spa</a>
+            <a href="#">Amara Resort & Spa</a>
           </h3>
           <div class="housing-wrapper">
             <div class="housing-type">

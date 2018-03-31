@@ -43,25 +43,27 @@
   <div class="reason-1">
       <div class="reason-1-text">
         <h3>Настоящий городок</h3>
-        <p>-№1 </p>
-        <p> Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <p>- №1 -</p>
+        <p class="reason-1-sedona"> Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="reason-1-picture"></div>
   </div>
 
     <div class="reason-1-list">
+      <div class="reason-1-list-elements">
+      </div>
       <ul class="reason-1-benefits">
         <li class="reason-1-benefits-accomodation">
-          <h3>ЖИЛЬЁ</h3>
-          <p class="accomodation-slogan"> Рекомендуем пожить в настоящем мотеле, все как в настоящем кино!</P>
+          <h3 class="reasons-benefits-titles reason-1-accomodation">ЖИЛЬЁ</h3>
+          <p class="reasons-benefits-slogan"> Рекомендуем пожить в настоящем мотеле, все как в кино!</P>
         </li>
         <li class="reason-1-benefits-food">
-          <h3>ЕДА</h3>
-          <p class="food-slogan">Всегда заказывайте настоящий бургер, вы не разочаруетесь!</p>
+          <h3 class="reasons-benefits-titles reason-1-food">ЕДА</h3>
+          <p class="reasons-benefits-slogan">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="reason-1-benefits-souvenirs">
-          <h3>СУВЕНИРЫ</h3>
-          <p class="souvenirs-slogan">Не только китайского, но и местного производства</p>
+          <h3 class="reasons-benefits-titles reason-1-souvenirs">СУВЕНИРЫ</h3>
+          <p class="reasons-benefits-slogan">Не только китайского, но и местного производства</p>
         </li>
       </ul>
     </div>
@@ -69,25 +71,28 @@
     <div class="other-reasons">
       <div class="reason-2">
         <div class="reason-2-text">
-        <h3>Там есть мост дьявола</h3>
-          <p>-№2-</p>
-          <p>Да, по нему можно пройтись, если конечно осмелитесь!</p>
+        <h3>Там есть<br> мост дьявола</h3>
+          <p class="reason-2-number">- №2 -</p>
+          <p class="reason-2-slogan">Да, по нему можно пройти! если конечно вы осмелитесь</p>
         </div>
         <div class="reason-2-picture"></div>
       </div>
       <div class="reasons-extra">
         <ul class="reasons-extra-list">
         <li class="reasons-extra-list-citation">
-          <h3>Небольшая площадь</h3>
-          <p>-№3-<br>Все достопримечательности находятся очень близко</p>
+          <h3 class="reasons-benefits-titles reason-extra-square">Небольшая площадь</h3>
+          <p>-№3-</p>
+          <p class="reasons-benefits-slogan reason-extra-slogan">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="reasons-extra-list-citation">
-          <h3>Красивая дорога</h3>
-          <p>-№4-<br>Ехать из Лас- Вегаса в Седону совсем не скучно</p>
+          <h3 class="reasons-benefits-titles reason-extra-road">Красивая дорога</h3>
+          <p>-№4-</p>
+          <p class="reasons-benefits-slogan reasons-benefits-driving">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </li>
         <li class="reasons-extra-list-citation">
-          <h3>Мало туристов</h3>
-          <p>-№5-<br>Большинство едет в Гранд.Каньон и толпится там</p>
+          <h3 class="reasons-benefits-titles reason-extra-tourists">Мало туристов</h3>
+          <p>-№5-</p>
+          <p class="reasons-benefits-slogan">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </div>
@@ -100,8 +105,8 @@
   <div class="interested">
     <div class="interested-text">
       <h2 class="interested-text-question">Заинтересовались?</h2>
-      <p class="interested-text-offer">Укажите предполагаемые даты поездки
-        и мы покажем вам лучшие предложения в Седоне</p>
+      <p class="interested-text-offer">Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </div>
 
       <a class="search-hotel-button" href="#">Поиск гостиницы в седоне</a>
@@ -131,10 +136,10 @@
            <div class="adults-wrapper">
              <label for="adults">Взрослые:</label>
              <span class="visually-hidden">Минус</span>
-             <button class="decrease-button button-number" type="button">-</button>
+             <button class="minus-button button-number" type="button">-</button>
              <input id="adults" type="text" name="adults" placeholder="2">
              <span class="visually-hidden">Плюс</span>
-             <button class="increase-button button-number" type="button">+</button>
+             <button class="plus-button button-number" type="button">+</button>
            </div>
          </div>
 
@@ -155,7 +160,7 @@
      <section class="map">
        <h2 class="visually-hidden">Расположение Седоны на карте</h2>
        <div class="image-of-map">
-         <iframe src="https://yandex.ru/map-widget/v1/-/CBe3BMTQ-A" width="1200" height="593" frameborder="0"></iframe>
+         <iframe src="https://yandex.ru/map-widget/v1/-/CBe3BMTQ-A" width="1200" height="470" frameborder="0"></iframe>
        </div>
      </section>
 </section>
@@ -173,7 +178,10 @@
       <a href="#" title="youtube" class="youtube-button">youtube</a>
     </li>
   </ul>
-  <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/logo-htmlacademy.svg" width="155" height="41" alt="htmlacademy-logo"></a>
+  <div class="website-by">
+    <p> Website by </p>
+    <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/logo-htmlacademy.svg" width="155" height="41" alt="htmlacademy-logo"></a>
+  </div>
 </footer>
 </div>
   </body>
