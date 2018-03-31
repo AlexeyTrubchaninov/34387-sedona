@@ -112,12 +112,24 @@ img{
 /*Изображение Sedona*/
 
 .header-img{
+  position:relative;
   width:1200px;
   height:508px;
-  background-image: url("../img/Sedona_header.png");
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size:cover;
   text-align: center;
+}
+
+.header-img::after{
+  content: "";
+  width:1200px;
+  height:57px;
+  position:absolute;
+  background-image: url("../img/Shape1.png");
+  background-repeat: no-repeat;
+  left:0px;
+  bottom: 0px;
 }
 
 .header-img img{
@@ -224,6 +236,45 @@ img{
 
 .reason-1-accomodation{
   margin-top:10px;
+  position: relative;
+}
+
+.reason-1-accomodation::before{
+  content:"";
+  width:75px;
+  height:72px;
+  position: absolute;
+  background-image: url("../img/icon-1.png");
+  left:162px;
+  top:-100px;
+}
+
+.reason-1-food{
+  position: relative;
+}
+
+.reason-1-food::before{
+  content:"";
+  width:74px;
+  height:70px;
+  position: absolute;
+  background-image: url("../img/icon-3.png");
+  left:162px;
+  top:-100px;
+}
+
+.reason-1-souvenirs{
+  position: relative;
+}
+
+.reason-1-souvenirs::before{
+  content:"";
+  width:64px;
+  height:76px;
+  position: absolute;
+  background-image: url("../img/icon-2.png");
+  left:170px;
+  top:-108px;
 }
 
 .reason-1-benefits-food{
