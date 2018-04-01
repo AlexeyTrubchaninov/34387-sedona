@@ -31,20 +31,20 @@
          <legend>Инфраструктура:</legend>
          <ul>
            <li class="filter-option option-pool">
-             <input class="visually-hidden filter-input filter-input-checkbox" id="filter-swimming-pool" type="checkbox" name="the-filter-of-option" value="swimming-pool" checked>
-             <label for="filter-swimming-pool" tabindex="1">
+             <input class="input-pool" id="filter-swimming-pool" type="checkbox" name="the-filter-of-option" value="swimming-pool" checked>
+             <label for="filter-swimming-pool label-checkbox" tabindex="1">
                <span class="filter-form-text">Бассейн</span>
              </label>
            </li>
            <li class="filter-option option-parking">
-             <input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="the-filter-of-option" value="parking">
-             <label for="filter-parking" tabindex="2">
+             <input class="input-parking" id="filter-parking" type="checkbox" name="the-filter-of-option" value="parking">
+             <label for="filter-parking label-checkbox" tabindex="2">
                <span class="filter-form-text">Парковка</span>
              </label>
            </li>
            <li class="filter-option option-internet">
-             <input class="visually-hidden filter-input filter-input-checkbox" id="filter-wi-fi" type="checkbox" name="the-filter-of-option" value="wi-fi">
-             <label for="filter-wi-fi" tabindex="3">
+             <input class="input-wi-fi" id="filter-wi-fi" type="checkbox" name="the-filter-of-option" value="wi-fi">
+             <label for="filter-wi-fi label-checkbox" tabindex="3">
                <span class="filter-form-text">Wi-Fi</span>
              </label>
            </li>
@@ -54,21 +54,21 @@
          <legend>Тип жилья:</legend>
          <ul>
            <li class="filter-option option-hotel">
-             <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" name="the-filter-of-option" value="hotel" checked>
-             <label for="filter-hotel" tabindex="4">
-               <span class="filter-form-text">Гостиница</span>
+             <input class="filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" name="the-filter-of-option" value="hotel" checked>
+             <label for="filter-hotel label-appartments" tabindex="4">
+               <span class="filter-form-text label-checkbox">Гостиница</span>
              </label>
            </li>
            <li class="filter-option option-motel">
-             <input class="visually-hidden filter-input filter-input-checkbox" id="filter-motel" type="checkbox" name="the-filter-of-option" value="motel" checked>
-             <label for="filter-motel" tabindex="5">
-               <span class="filter-form-text">Мотель</span>
+             <input class="filter-input filter-input-checkbox" id="filter-motel" type="checkbox" name="the-filter-of-option" value="motel" checked>
+             <label for="filter-motel label-appartments" tabindex="5">
+               <span class="filter-form-text label-checkbox">Мотель</span>
              </label>
            </li>
            <li class="filter-option option-appartments">
-             <input class="visually-hidden filter-input filter-input-checkbox" id="filter-apartments" type="checkbox" name="the-filter-of-option" value="apartments" checked>
-             <label for="filter-apartments" tabindex="6">
-               <span class="filter-form-text">Апартаменты</span>
+             <input class="filter-input filter-input-checkbox" id="filter-apartments" type="checkbox" name="the-filter-of-option" value="apartments" checked>
+             <label for="filter-apartments label-appartments" tabindex="6">
+               <span class="filter-form-text label-checkbox">Апартаменты</span>
              </label>
            </li>
          </ul>
@@ -110,20 +110,16 @@
           <a href="#">По рейтингу</a>
         </li>
       </ul>
-      <ul class="selector">
-        <li class="selector-item-up">
-          <a href="#">
-            Вверх
-            <span class="visually-hidden">Cортировка по возрастанию</span>
-          </a>
-        </li>
-        <li class="selector-item-down sort-item-current">
-          <a href="#">
-            Вниз
-            <span class="visually-hidden">Cортировка по возрастанию</span>
-          </a>
-        </li>
-      </ul>
+      <div class="selector">
+        <ul class="selector-list">
+          <li class="selector-list-item">
+            <a class="selector-list-link selector-list-link-up" href="#">Сортировка по возрастанию</a>
+          </li>
+          <li class="selector-list-item">
+            <a class="selector-list-link selector-list-link-down selector-list-link-active" href="#">Сортировка по убыванию</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="housing-result">
       <article class="housing-item">
@@ -150,7 +146,7 @@
           </div>
         </div>
         <div class="rating-item">
-          <b class="five-stars">Пять звёзд</b>
+          <div class="star-item item-1"></div>
           <p>Рейтинг: 8,5</p>
         </div>
       </article>
@@ -178,7 +174,7 @@
           </div>
         </div>
         <div class="rating-item">
-          <b class="three-stars">Три звезды</b>
+          <div class="star-item item-2"></div>
           <p>Рейтинг: 8,9</p>
         </div>
       </article>
@@ -206,7 +202,7 @@
           </div>
         </div>
         <div class="rating-item">
-          <b class="two-stars">Две звезды</b>
+          <div class="star-item item-3"></div>
           <p>Рейтинг: 9,2</p>
         </div>
       </article>
@@ -214,18 +210,29 @@
     </main>
     <footer class="main-footer">
       <b class="footer-hashtag">#VISITSEDONA</b>
-      <ul class="footer-social">
-        <li class="footer-social-twitter">
-          <a href="#" title="twitter" class="twitter-button">twitter</a>
-        </li>
-        <li class="footer-social-facebook">
-          <a href="#" title="facebook" class="facebook-button">facebook</a>
-        </li>
-        <li class="footer-social-youtube">
-          <a href="#" title="youtube" class="youtube-button">youtube</a>
-        </li>
-      </ul>
-      <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/logo-htmlacademy.svg" width="155" height="41" alt="htmlacademy-logo"></a>
+      <section class="footer-social">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-link social-link-twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link social-link-facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link social-link-youtube" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      <div class="website-by">
+        <p> Website by </p>
+        <a href="#" title="htmlacademy" class="htmlacademy-button"><img src="img/logo-htmlacademy.svg" width="155" height="41" alt="htmlacademy-logo"></a>
+      </div>
     </footer>
   </div>
       </body>
